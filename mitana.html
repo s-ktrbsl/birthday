@@ -32,54 +32,24 @@
                 <div class="card border-0 shadow-sm rounded-3">
                     <div class="card-body d-flex justify-content-around align-items-center my-5">
                         <div>
-                            <i class="fas fa-wine-glass-alt fa-rotate-330 fa-3x orange icon-glass"></i>
+                            <i class="fas fa-bomb fa-flip-horizontal fa-3x red"></i>
                         </div>
                         <div class="wf-nicomoji message">
                             <div class="d-flex justify-content-center">
-                                <span class="pink">H</span>
-                                <span class="blue">a</span>
-                                <span class="pink">p</span>
-                                <span class="blue">p</span>
-                                <span class="pink">y</span>
+                                <span class="pink">QRコード...</span>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <span class="pink">B</span>
-                                <span class="blue">i</span>
-                                <span class="pink">r</span>
-                                <span class="blue">t</span>
-                                <span class="pink">h</span>
-                                <span class="blue">d</span>
-                                <span class="pink">a</span>
-                                <span class="blue">y</span>
+                                <span class="blue">よみこんだな...</span>
                             </div>
                         </div>
                         <div>
-                            <i class="fas fa-wine-glass-alt fa-rotate-30 fa-3x orange icon-glass"></i>
+                            <i class="fas fa-bomb fa-3x red"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <script>
-        window.addEventListener("load", () => {
-
-            const icons = document.getElementsByClassName("icon-glass");
-
-            Array.from(icons).forEach(element => {
-                element.addEventListener("click", event => {
-                    const classes = ['faa-shake', 'animated'];
-                    if (element.classList.contains(classes[0])) {
-                        element.classList.remove(...classes);
-                    } else {
-                        element.classList.add(...classes);
-                    }
-                });
-            });
-
-        })
-    </script>
 
 </body>
 

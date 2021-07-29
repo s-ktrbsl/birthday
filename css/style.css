@@ -1,0 +1,43 @@
+body {
+    background-color: #fcfaf2;
+}
+
+.wf-nicomoji {
+    font-family: "Nico Moji";
+}
+
+.message {
+    font-size: xx-large;
+}
+
+.blue {
+    color: #7d89de;
+}
+
+.pink {
+    color: #e16b83;
+}
+
+.orange {
+    color: #f7c242;
+}
+
+.red {
+    color: #c73e3a;
+}
+
+.fa-rotate-30 {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.fa-rotate-330 {
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
