@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.css"
+        type="text/css" media="all" />
 
     <style>
         body {
@@ -68,9 +71,9 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-8">
                 <div class="card border-0 shadow-sm rounded-3">
-                    <div class="card-body d-flex justify-content-around align-items-center my-4">
+                    <div class="card-body d-flex justify-content-around align-items-center my-5">
                         <div>
-                            <i class="fas fa-wine-glass-alt fa-rotate-330 fa-3x orange"></i>
+                            <i class="fas fa-wine-glass-alt fa-rotate-330 fa-3x orange icon-glass"></i>
                         </div>
                         <div class="wf-nicomoji message">
                             <div class="d-flex justify-content-center">
@@ -92,13 +95,32 @@
                             </div>
                         </div>
                         <div>
-                            <i class="fas fa-wine-glass-alt fa-rotate-30 fa-3x orange"></i>
+                            <i class="fas fa-wine-glass-alt fa-rotate-30 fa-3x orange icon-glass"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        window.addEventListener("load", () => {
+
+            const icons = document.getElementsByClassName("icon-glass");
+
+            Array.from(icons).forEach(element => {
+                element.addEventListener("click", event => {
+                    const classes = ['faa-shake', 'animated'];
+                    if (element.classList.contains(classes[0])) {
+                        element.classList.remove(...classes);
+                    } else {
+                        element.classList.add(...classes);
+                    }
+                });
+            });
+
+        })
+    </script>
 
 </body>
 
